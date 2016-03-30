@@ -1,1 +1,39 @@
-main.css
+
+body{
+	font-family: 'Open Sans Condensed', sans-serif; 
+	text-align: center;
+	font-size:30px;
+	background-image: url('wood.jpeg');
+	color: white;
+}
+#List{
+	align-items: center;
+	width: 500px;
+	list-style-position: inherit;
+	float: both;
+}
+ul li {
+    align:center;
+    margin: 5px;
+}
+
+#item_form{
+	width: 350px;
+	border-radius: 6px;
+}
+
+#submit_item{
+	width: 150px;
+	border-radius: 10px;
+	background-color: #462F1A;
+	color:white;
+	border-color:white;
+}
+
+#clear{
+	background-color: #462F1A;
+	color:white;
+	border-color:white;
+	border-radius: 10px;
+	width:50px;
+}
