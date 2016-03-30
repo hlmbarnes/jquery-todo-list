@@ -1,6 +1,4 @@
 
-
-
 $(document).ready(function() {
 	$('#submit_item').on('click', function (){
 		event.preventDefault();
@@ -8,8 +6,12 @@ $(document).ready(function() {
 		console.log(text);
 		$newItem = $('<li>' + text + ' <button>X</button></li>');
 		$newItem.appendTo('#list');
+		$('#item_form').val('');
 		});
+
 	});
+
+
 
 $('#list').on('click', '*', function(){
 	$(this).remove()
