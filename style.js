@@ -6,15 +6,13 @@ $(document).ready(function() {
 		event.preventDefault();
 		var text = $('#item_form').val();
 		console.log(text);
-		$newItem = $('<li>' + text + ' <button>Delete</button></li>');
+		$newItem = $('<li>' + text + ' <button>X</button></li>');
 		$newItem.appendTo('#list');
 		});
 	});
 
-// <li> <input type="radio">
-//         <button>Delete</button> </li>
+$('#list').on('click', '*', function(){
+	$(this).remove()
+});
 
-	// $(this).children('input:text').each(function(index, elem) {
-	// 	var value = $(elem).val()
-	// 	$('body').append('<h2>' + value + '</h2>');
-	// 	$(elem).val('');
+
